@@ -4,6 +4,7 @@
 )]
 
 mod cmd;
+mod command_error;
 mod commands;
 
 use commands::IncrementPromiseResponse;
