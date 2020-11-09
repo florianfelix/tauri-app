@@ -7,7 +7,7 @@ yarn install
 
 ### Compiles and hot-reloads for development
 ```
-yarn taur:serve
+yarn tauri:serve
 ```
 
 ### Compiles and minifies for production
