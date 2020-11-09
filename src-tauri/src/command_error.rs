@@ -1,7 +1,7 @@
 // An error type we define
 // We could also use the `anyhow` lib here
 #[derive(Debug, Clone)]
-struct CommandError<'a> {
+pub struct CommandError<'a> {
   message: &'a str,
 }
 

@@ -7,7 +7,9 @@ mod cmd;
 mod command_error;
 mod commands;
 
+use command_error::CommandError;
 use commands::IncrementPromiseResponse;
+
 
 fn main() {
   tauri::AppBuilder::new()
@@ -28,9 +30,8 @@ fn main() {
               _webview,
               move || {
                 println! {"Rust: Incrementing Promise {}", payload.count};
-                let res = payload.count + 1 as u64;
                 let response = IncrementPromiseResponse {
-                  newcount: res,
+                  newcount: payload.count + 1,
                   message: "async response!",
                 };
                 Ok(response)
