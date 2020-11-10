@@ -12,9 +12,9 @@
 
 <script>
 // eslint-disable-next-line no-unused-vars
-import { invoke } from "tauri/api/tauri";
+import { invoke, promisified } from "tauri/api/tauri";
 // eslint-disable-next-line no-unused-vars
-import { promisified } from "tauri/api/tauri";
+import { event } from "tauri/api/event";
 
 export default {
   name: "HelloWorld",
